@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ABF61FB8-7D67-49FD-AE53-8C9CD43DE2A5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SI.GE.TA.M</RootNamespace>
+    <AssemblyName>SI.GE.TA.M</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Frm_AsignacionRolesyPermisos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_AsignacionRolesyPermisos.Designer.cs">
+      <DependentUpon>Frm_AsignacionRolesyPermisos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Autorizar_retiro_repuesto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Autorizar_retiro_repuesto.Designer.cs">
+      <DependentUpon>Frm_Autorizar_retiro_repuesto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Completar_Documento_Trabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Completar_Documento_Trabajo.Designer.cs">
+      <DependentUpon>Frm_Completar_Documento_Trabajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Cotizar_Service.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Cotizar_Service.Designer.cs">
+      <DependentUpon>Frm_Cotizar_Service.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Iniciar_Documento_Trabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Iniciar_Documento_Trabajo.Designer.cs">
+      <DependentUpon>Frm_Iniciar_Documento_Trabajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Reservar_Turno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Reservar_Turno.Designer.cs">
+      <DependentUpon>Frm_Reservar_Turno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frm_AsignacionRolesyPermisos.resx">
+      <DependentUpon>Frm_AsignacionRolesyPermisos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Autorizar_retiro_repuesto.resx">
+      <DependentUpon>Frm_Autorizar_retiro_repuesto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Completar_Documento_Trabajo.resx">
+      <DependentUpon>Frm_Completar_Documento_Trabajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Cotizar_Service.resx">
+      <DependentUpon>Frm_Cotizar_Service.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Iniciar_Documento_Trabajo.resx">
+      <DependentUpon>Frm_Iniciar_Documento_Trabajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Reservar_Turno.resx">
+      <DependentUpon>Frm_Reservar_Turno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BE\DOMAIN.csproj">
+      <Project>{19828064-0352-4202-aedd-7e07857334d1}</Project>
+      <Name>DOMAIN</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BL\BLL.csproj">
+      <Project>{95bbc128-63db-45bb-9cb4-4287681d40d1}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SERVICE\SERVICE.csproj">
+      <Project>{8c019371-b3b1-43fe-b4bb-73b513f5f074}</Project>
+      <Name>SERVICE</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
