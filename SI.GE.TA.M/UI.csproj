@@ -76,6 +76,12 @@
     <Compile Include="Frm_Iniciar_Documento_Trabajo.Designer.cs">
       <DependentUpon>Frm_Iniciar_Documento_Trabajo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Frm_Prueba_Git.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Prueba_Git.Designer.cs">
+      <DependentUpon>Frm_Prueba_Git.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frm_Reservar_Turno.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Iniciar_Documento_Trabajo.resx">
       <DependentUpon>Frm_Iniciar_Documento_Trabajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_Prueba_Git.resx">
+      <DependentUpon>Frm_Prueba_Git.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_Reservar_Turno.resx">
       <DependentUpon>Frm_Reservar_Turno.cs</DependentUpon>
